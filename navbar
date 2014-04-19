@@ -1,0 +1,26 @@
+<!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Wedding <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="wedding.html">Wedding Information</a></li>
+                            <li><a href="test.html">RSVP</a></li>
+                            <li><a href="directions.html">Directions</a></li>
+                          </ul>
+                    </li>
+                    <li>
+                        <a href="honeymoon.html">Honeymoon</a>
+                    </li>
+                    <li>
+                        <a href="registry.html">Registry</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
