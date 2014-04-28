@@ -34,7 +34,7 @@
 
 <body>
 
-    <div class="brand">Bill &amp; Ashley</div>
+    <div class="brand">Bill &amp; Ashley TEST</div>
     <div class="address-bar">June 27, 2014</div>
 
     <nav class="navbar navbar-default" role="navigation">
@@ -83,38 +83,46 @@
         <!-- /.container -->
     </nav>
 
-    <div class="container">
+   <div class="container">
 
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Wedding <strong>info</strong>
+                    <h2 class="intro-text text-center">
+                        <strong>Song Request</strong>
                     </h2>
-                    <hr>
-                </div>
-                <div class="col-md-6">
-                    <p>
-                        Our wedding will be held at: <br>
-                         <a href="http://173carlylehouse.com/" target="_blank">The 173 Carlyle House</a>
-                        <address>
-                           <i class="fa fa-map-marker"></i> 173 S Peachtree St <br>
-                            Norcross, GA 30071 <br>
-                            <i class="fa fa-phone"></i> (770) 662-5800
-                        </address>
-                    </p>
-                    <p>
-                       <i class="fa fa-music"></i> We are collecting song requests! Please <a href="songrequest.html">click here to request a song</a> (or 3!) to be played at our reception! <br>
-                        Thank you!
-                    </p>
-                    <!--<p>
-                        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=The%20173%20Carlyle%20House%2C%20South%20Peachtree%20Street%2C%20Norcross%2C%20GA%2C%20United%20States&key=AIzaSyB9zIRXPEuqQtexDPr6Glc-6eBirWWJocQ"></iframe>
-                    </p>-->
                     
+                    <h3 style="color:#FF6633;"><?php echo $_GET[msg];?></h3>
+                   <hr>
+                   <div class="col-md-4">
+                       <p>
+                           Please request a song (or a few!) to be played at our wedding reception! Be sure to include the title and artist! <br>
+                           Thank you!
+                       </p>
+                   </div>
+                    
+                    <div class="col-md-6">                         
+                        <form name="enq" method="post" action="email/" onsubmit="return validation();">
+                        <fieldset>
+                            
+                        <input type="text" name="name" id="name" value=""  class="input-block-level" placeholder="Name" size="40"/>
+                        <br><br>
+                        <input type="text" name="email" id="email" value="" class="input-block-level" placeholder="Email" size="40" />
+                        <br><br>
+                        <textarea rows="3" name="song" id="song" class="input-block-level" placeholder="Song Request"></textarea>
+                        <br><br>
+                           
+                        <div class="actions">
+                        <input type="submit" value="Request!" name="submit" id="submitButton" class="btn btn-info" title="Click here to request a song!" />
+                        </div>
+                            
+                        </fieldset>
+                        </form> 
+                    </div>
+                
                 </div>
-                <div class="col-md-6">
-                    <img src="img/carlylehouse.jpg" alt="">
-                </div>
+                
                 <div class="clearfix"></div>
             </div>
         </div>

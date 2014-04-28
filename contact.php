@@ -7,7 +7,7 @@
   font-size: 1.25em;
   font-weight: 400;">
 
-        <h1>RSVP</h1>
+        <h1>Song Request</h1>
         <h3><?php echo $_GET[msg];?></h3>
         <hr>
         <h3><a href="index.html">back</a></h3>

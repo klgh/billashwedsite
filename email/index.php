@@ -3,7 +3,6 @@
  {
     $name = $_POST['name'];
 	$email = $_POST['email'];
-	$query = $_POST['message'];
 	$song = $_POST['song'];
 	$email_from = $name.'<'.$email.'>';
 
@@ -20,15 +19,12 @@
  		 Email:
 		 $email 	   
          <br>
- 		 Guests Attending:
-		 $query 
-		 <br>
 		 Song Request:
 		 $song	   
       
    ";
 	if(mail($to,$subject,$message,$headers))
-		header("Location:../contact.php?msg=Thank you so much for your RSVP!");
+		header("Location:../contact.php?msg=Thank you so much for your song request!");
 	else
 		header("Location:../contact.php?msg=Error To send Email, please try again, or email rsvp@billashleywedding.com");
 		//contact:-your-email@your-domain.com

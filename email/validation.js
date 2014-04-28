@@ -34,11 +34,11 @@
 	}
 	
 	
-	var message=document.enq.message.value;
-	if(message=='')
+	var song=document.enq.song.value;
+	if(song=='')
 	{
 		alert("Query Field Should Not Be Empty!");
-		document.enq.message.focus();
+		document.enq.song.focus();
 		return false;
 	}
     return true;
