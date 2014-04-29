@@ -2,7 +2,7 @@
     
 
 
-    <div class="span8 text-center" id="divMain" style=" text-transform: uppercase;
+    <div class="span8 text-center box" id="divMain" style=" text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.25em;
   font-weight: 400;">

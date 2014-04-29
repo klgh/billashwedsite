@@ -6,7 +6,7 @@
 	$song = $_POST['song'];
 	$email_from = $name.'<'.$email.'>';
 
- $to="kaleighleach@gmail.com";
+ $to="rsvp@billashleywedding.com";
  $subject="Wedding RSVP";
  $headers  = 'MIME-Version: 1.0' . "\r\n";
  $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
